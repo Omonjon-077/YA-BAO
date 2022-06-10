@@ -1,0 +1,16 @@
+<svg width="106" height="138" viewBox="0 0 106 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 37L9 37M5 33L5 41" stroke="#DBE0E7" stroke-width="2" stroke-linecap="round"/>
+<path d="M33 37L41 37M37 33L37 41" stroke="#DBE0E7" stroke-width="2" stroke-linecap="round"/>
+<path d="M65 37L73 37M69 33L69 41" stroke="#DBE0E7" stroke-width="2" stroke-linecap="round"/>
+<path d="M97 37L105 37M101 33L101 41" stroke="#DBE0E7" stroke-width="2" stroke-linecap="round"/>
+<path d="M97 101L105 101M101 97L101 105" stroke="#F3745A" stroke-width="2" stroke-linecap="round"/>
+<path d="M97 133L105 133M101 129L101 137" stroke="#DBE0E7" stroke-width="2" stroke-linecap="round"/>
+<path d="M65 101L73 101M69 97L69 105" stroke="#DBE0E7" stroke-width="2" stroke-linecap="round"/>
+<path d="M65 133L73 133M69 129L69 137" stroke="#DBE0E7" stroke-width="2" stroke-linecap="round"/>
+<path d="M1 5L9 5M5 1L5 9" stroke="#DBE0E7" stroke-width="2" stroke-linecap="round"/>
+<path d="M33 5L41 5M37 1L37 9" stroke="#3E96FC" stroke-width="2" stroke-linecap="round"/>
+<path d="M65 5L73 5M69 1L69 9" stroke="#DBE0E7" stroke-width="2" stroke-linecap="round"/>
+<path d="M97 5L105 5M101 1L101 9" stroke="#DBE0E7" stroke-width="2" stroke-linecap="round"/>
+<path d="M97 69L105 69M101 65L101 73" stroke="#DBE0E7" stroke-width="2" stroke-linecap="round"/>
+<path d="M65 69L73 69M69 65L69 73" stroke="#DBE0E7" stroke-width="2" stroke-linecap="round"/>
+</svg>
