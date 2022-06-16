@@ -1,12 +1,17 @@
 // Header Swiper //
 var swiper = new Swiper(".mySwiper", {
-  loop: 'true'
+  slidesPerView: 1,
+  spaceBetween: 30,
+  slidesPerGroup: 1,
+  grabCursor: true,
+  loop: true
 }); // New Swiper //
 
 let newSwiper = new Swiper(".new-swiper", {
   // centeredSlides: true,
   slidesPerView: 'auto',
   spaceBetween: 16,
+  grabCursor: true,
   loop: 'true'
 }); // Scroll Up //  
 
