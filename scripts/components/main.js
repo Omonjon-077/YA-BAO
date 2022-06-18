@@ -21,3 +21,9 @@ function scrollUp() {
 }
 
 window.addEventListener('scroll', scrollUp);
+/* fn funcF */
+
+function fnBrowserDetect() {
+  let userAgent = navigator.userAgent;
+  let browserName;
+}
