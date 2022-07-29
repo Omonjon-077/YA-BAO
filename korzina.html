@@ -8,6 +8,8 @@
     <title>YA BAO | Basket</title>
     <!--========== FAVICON ==========-->
     <link rel="shortcut icon" href="./images/favacion.png" type="image/x-icon">
+    <!--============ For Open-Props CDN  -->
+    <link rel="stylesheet" href="https://unpkg.com/open-props" />
     <!--========== BOOTSTRAP ==========-->
     <link rel="stylesheet" href="./styles/framework/bootstrap.min.css">
     <!--========== SWIPPER BEGIN ==========-->
@@ -28,24 +30,31 @@
 
 <body onload="fnBrowserDetect()" class="">
 <!--====================== Korzina Header ======================-->
-<header id="header-kor">
+<header id="header-kor" class="header__kor">
     <div class="container">
-        <div class="header__korzina d-flex justify-content-between align-items-center">
+        <div class="header__korzina">
             <div class="header__korzina-logos">
                 <a href="index.html" class="header__korzina-logo"><img src="./images/svg/korzina-logo.svg" alt=""></a>
                 <a href="index.html" class="header__korzina-logo"><img src="./images/svg/korzina-logo1.svg" alt=""></a>
             </div>
             <div class="header__korzina-wrap d-flex">
                 <div class="header__korzina-wrapper text-center">
-                    <a href="" class="header__korzina-link active">1</a>
+                    <a href="#" class="header__korzina-link active">1</a>
                     <p class="header__korzina-title">Корзина</p>
                 </div>
+                <svg class="svg1" width="102" height="2" viewbox="0 0 102 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="1" y1="1" x2="101" y2="1" stroke="#B8C5D0" stroke-width="2" stroke-linecap="round"
+                        stroke-dasharray="2 6" />
+                </svg>
                 <div class="header__korzina-wrapper text-center">
-                    <a href="" class="header__korzina-link">2</a>
+                    <a href="#" class="header__korzina-link">2</a>
                     <p class="header__korzina-title">Оформление заказа</p>
                 </div>
+                <svg class="svg2" width="102" height="2" viewbox="0 0 102 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="1" y1="1" x2="101" y2="1" stroke="#B8C5D0" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 6"/>
+                    </svg>
                 <div class="header__korzina-wrapper text-center">
-                    <a href="" class="header__korzina-link">3</a>
+                    <a href="#" class="header__korzina-link">3</a>
                     <p class="header__korzina-title">Заказ принят</p>
                 </div>
             </div>
@@ -326,7 +335,7 @@
 </footer>
 <!--========== SCROLL UP ==========-->
 <a href="#" class="scrollup" id="scroll-up">
-    <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    <i class="bx bx-up-arrow-alt scrollup__icon"></i>
 </a>
 <!--========== JQUERY ==========-->
 <script src="./scripts/jquery.min.js"></script>
@@ -346,6 +355,10 @@
 </script>
 <!--========== CUSTOM SCRIPT ==========-->
 <script src="./scripts/components/main.js"></script>
+<script src="./scripts/components/calculator.js"></script>
+<script src="./scripts/components/toggleCart.js"></script>
+<script src="./scripts/components/counter.js"></script>
+<script src="./scripts/components/cart.js"></script>
 </body>
 
 </html>

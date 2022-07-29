@@ -8,6 +8,8 @@
     <title>YA BAO</title>
     <!--========== FAVICON ==========-->
     <link rel="shortcut icon" href="./images/favacion.png" type="image/x-icon">
+     <!--============ For Open-Props CDN  -->
+     <link rel="stylesheet" href="https://unpkg.com/open-props" />
     <!--========== BOOTSTRAP ==========-->
     <link rel="stylesheet" href="./styles/framework/bootstrap.min.css">
     <!--========== SWIPPER BEGIN ==========-->
@@ -50,7 +52,7 @@
         </div>
     </nav>
     <!--========== NAVBAR GENERAL OR PRIMARY (SECONDARY) ==========-->
-    <nav class="navbar nav navbar-expand-lg navbar-light ">
+    <nav class="navbar nav navbar-expand-lg navbar-light" id="nav__fixed">
         <div class="container position-relative">
             <button class="navbar-toggler header__collap menu__btn collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -64,125 +66,91 @@
                         <a class="nav__link" href="#section-pasta">Паста</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav__link" href="#">Супы</a>
+                        <a class="nav__link" href="#!">Супы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav__link" href="#">Салаты</a>
+                        <a class="nav__link" href="#!">Салаты</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav__link" href="#">Антипасти</a>
+                        <a class="nav__link" href="#!">Антипасти</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav__link" href="#">Напитки</a>
+                        <a class="nav__link" href="#!">Напитки</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav__link" href="#">Десерты</a>
+                        <a class="nav__link" href="#!">Десерты</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav__link" href="korzina.html">Бакалея</a>
+                        <a class="nav__link" href="korzina.html">Корзина</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav__link" href="action.html">Акции</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav__link" href="#">Комбо</a>
+                        <a class="nav__link" href="#!">Комбо</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav__link" href="contact.html">Контакты</a>
                     </li>
-    
                 </ul>
-    
+                <form class="nav__form none" id="search" action="">
+                    <input required placeholder="Поиск" type="search">
+                    <button><i class="bx bx-search-alt-2"></i></button>
+                </form>
             </div>
             <div class="nav__buttons">
-                <a href="" class="nav__button1">Войты</a>
-                <a href="" class="button nav__button2" id="korzina" onclick="openModal()">Корзина <span>|</span> 0 </a>
+                <a href="#!" class="nav__button1">Войты</a>
+                <a href="#!" class="button nav__button2 korzina-btn" id="korzina">Корзина | <span
+                        class="nav_button-num">0</span> </a>
+                <!--onclick="openModal()" -->
     
                 <!--=======================  Korzina  ==============================-->
+                
+                <div class="card__bg"></div>
     
                 <div class="nav__korzina" id="nav-korzina">
                     <!--==========  Korzina before Element ==========-->
                     <div class="nav__korzina-before">
                         <img src="./images/korzina2.png" alt="">
                     </div>
+                    <h2 class="nav__korzina-none">корзина пуста !!!</h2>
     
                     <div class="nav__korzina-but">
-                        <div class="nav__korzina-boxxer">
-                            <img class="nav__korzina-img" src="./images/new1.png" alt="">
     
-                            <div class="nav__korzina-box">
     
-                                <div class="nav__korzina-wrap">
-                                    <h3 class="nav__korzina-subtitle">С креветками и трюфелями</h3>
-                                    <a href="#!" class="nav__korzina-delet"><img src="./images/svg/korzina1.svg" alt="">
-                                    </a>
-                                </div>
-    
-                                <div class="nav__korzina-wrapper">
-                                    <div class="nav__korzina-pm">
-                                        <a href="#!" class="nav__korzina-minus"><img src="./images/svg/minus.svg"
-                                                alt=""></a>
-                                        <a href="#!" class="nav__korzina-num">1</a>
-                                        <a href="#!" class="nav__korzina-plus"><img src="./images/svg/plus.svg" alt=""></a>
-                                    </div>
-                                    <p class="nav__korzina-price">120 ₽</p>
-                                </div>
-    
-                            </div>
-    
-                        </div>
-    
-                        <div class="nav__korzina-boxxer">
-                            <img class="nav__korzina-img" src="./images/new1.png" alt="">
-    
-                            <div class="nav__korzina-box">
-    
-                                <div class="nav__korzina-wrap">
-                                    <h3 class="nav__korzina-subtitle">С креветками и трюфелями</h3>
-                                    <a href="#!" class="nav__korzina-delet"><img src="./images/svg/korzina1.svg" alt="">
-                                    </a>
-                                </div>
-    
-                                <div class="nav__korzina-wrapper">
-                                    <div class="nav__korzina-pm">
-                                        <a href="#!" class="nav__korzina-minus"><img src="./images/svg/minus.svg"
-                                                alt=""></a>
-                                        <a href="#!" class="nav__korzina-num">1</a>
-                                        <a href="#!" class="nav__korzina-plus"><img src="./images/svg/plus.svg" alt=""></a>
-                                    </div>
-                                    <p class="nav__korzina-price">120 ₽</p>
-                                </div>
-    
-                            </div>
-                        </div>
-                        <div class="nav__korzi">
-                            <h1 class="nav__korzi-subtitle">
-                                Сумма заказа
-                            </h1>
-                            <p class="nav__korzi-title">120 ₽</p>
-                        </div>
-                        <h1 class="nav__korzina-page">Добавить к заказу?</h1>
                     </div>
     
-                    <div class="swiper korzinaSwiper">
-                        <div class="swiper-wrapper korzi_swiper"
-                        >
+                    <div class="nav__korzi">
+                        <h1 class="nav__korzi-subtitle">
+                            Сумма заказа :
+                        </h1>
+                        <div style="display: flex; align-items: center;" class="nav__korzi-num-wrap">
+                            <p class="nav__korzi-title">0</p>
+                            <p class="nav__korzi-title-k">₽</p>
+                        </div>
+    
+                    </div>
+                    <h1 class="nav__korzina-page">Добавить к заказу?</h1>
+    
+    
+                    <div data-emp class="swiper korzinaSwiper">
+                        <div class="swiper-wrapper korzi_swiper">
                             <div class="swiper-slide">
-                                <div class="korzi__swiper-box">
+                                <div data-nav class="korzi__swiper-box">
                                     <img src="./images/new1.png" alt="New" class="korzi__swiper-img">
                                     <div class="korzi__swiper-boxxer">
                                         <h3 class="korzi__swiper-title">Молочный коктель с приятным аро...</h3>
-                                        <p class="korzi__swiper-text">от 120 ₽</p>
+                                        <p class="korzi__swiper-text">120 ₽</p>
                                     </div>
                                 </div>
                             </div>
     
                             <div class="swiper-slide">
-                                <div class="korzi__swiper-box">
+                                <div data-nav class="korzi__swiper-box">
                                     <img src="./images/new1.png" alt="New" class="korzi__swiper-img">
                                     <div class="korzi__swiper-boxxer">
                                         <h3 class="korzi__swiper-title">Молочный коктель с приятным аро...</h3>
-                                        <p class="korzi__swiper-text">от 120 ₽</p>
+                                        <p class="korzi__swiper-text">120 ₽</p>
                                     </div>
                                 </div>
                             </div>
@@ -191,6 +159,7 @@
                     </div>
     
                 </div>
+    
             </div>
         </div>
     </nav>
@@ -200,11 +169,11 @@
     <!--========== HEADER INTRO ==========-->
     <section class="header" id="headerIntro">
         <div class="container">
-            <div class="swiper headerSwiper header__intr">
+            <div class="swiper swiper-custom headerSwiper header__intr">
                 <div class="swiper-wrapper header__intr">
-                  <div class="swiper-slide"><img class="header__img" src="./images/header1.png" alt=""></div>
-                  <div class="swiper-slide"><img class="header__img" src="./images/header1.png" alt=""></div>
-                  <div class="swiper-slide"><img class="header__img" src="./images/header1.png" alt=""></div>
+                  <div class="header-slide swiper-slide"><img class="header__img" src="./images/header1.png" alt=""></div>
+                  <div class="header-slide swiper-slide"><img class="header__img" src="./images/header1.png" alt=""></div>
+                  <div class="header-slide swiper-slide"><img class="header__img" src="./images/header1.png" alt=""></div>
                 </div>
               </div>
         </div>
@@ -212,64 +181,60 @@
     <!-- ================== Reviews Section ========================== -->
     <section class="reviews">
         <div class="container">
-         <h1 class="reviews__subtitle" style="margin-bottom: 27px;">Отывы</h1>
-         <div class="reviews__wrap">
-            <div class="reviews__wrapper">
-                <div class="reviews__img">
-                    <img src="./images/reviews1.png" alt="">
-                </div>
-                <h2 class="reviews__title">lauria_gog</h2>
-            </div>
+            <h1 class="reviews__subtitle" style="margin-bottom: 27px;">Отывы</h1>
     
-            <div class="reviews__wrapper">
-                <div class="reviews__img">
-                    <img src="./images/reviews2.png" alt="">
+            <div class="swiper reviews__wrap">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide reviews__wrapper">
+                        <div class="reviews__img">
+                            <img src="./images/reviews1.png" alt="">
+                        </div>
+                        <h2 class="reviews__title">lauria_gog</h2>
+                    </div>
+                    <div class="swiper-slide reviews__wrapper">
+                        <div class="reviews__img">
+                            <img src="./images/reviews2.png" alt="">
+                        </div>
+                        <h2 class="reviews__title">lauria_gog</h2>
+                    </div>
+                    <div class="swiper-slide reviews__wrapper">
+                        <div class="reviews__img">
+                            <img src="./images/reviews3.png" alt="">
+                        </div>
+                        <h2 class="reviews__title">lauria_gog</h2>
+                    </div>
+                    <div class="swiper-slide reviews__wrapper">
+                        <div class="reviews__img">
+                            <img src="./images/reviews4.png" alt="">
+                        </div>
+                        <h2 class="reviews__title">lauria_gog</h2>
+                    </div>
+                    <div class="swiper-slide reviews__wrapper">
+                        <div class="reviews__img">
+                            <img src="./images/reviews5.png" alt="">
+                        </div>
+                        <h2 class="reviews__title">lauria_gog</h2>
+                    </div>
+                    <div class="swiper-slide reviews__wrapper">
+                        <div class="reviews__img">
+                            <img src="./images/reviews6.png" alt="">
+                        </div>
+                        <h2 class="reviews__title">lauria_gog</h2>
+                    </div>
+                    <div class="swiper-slide reviews__wrapper">
+                        <div class="reviews__img">
+                            <img src="./images/reviews7.png" alt="">
+                        </div>
+                        <h2 class="reviews__title">lauria_gog</h2>
+                    </div>
+                    <div class="swiper-slide reviews__wrapper">
+                        <div class="reviews__img">
+                            <img src="./images/reviews8.png" alt="">
+                        </div>
+                        <h2 class="reviews__title">lauria_gog</h2>
+                    </div>
                 </div>
-                <h2 class="reviews__title">lauria_gog</h2>
             </div>
-    
-            <div class="reviews__wrapper">
-                <div class="reviews__img">
-                    <img src="./images/reviews3.png" alt="">
-                </div>
-                <h2 class="reviews__title">lauria_gog</h2>
-            </div>
-    
-            <div class="reviews__wrapper">
-                <div class="reviews__img">
-                    <img src="./images/reviews4.png" alt="">
-                </div>
-                <h2 class="reviews__title">lauria_gog</h2>
-            </div>
-    
-            <div class="reviews__wrapper">
-                <div class="reviews__img">
-                    <img src="./images/reviews5.png" alt="">
-                </div>
-                <h2 class="reviews__title">lauria_gog</h2>
-            </div>
-    
-            <div class="reviews__wrapper">
-                <div class="reviews__img">
-                    <img src="./images/reviews6.png" alt="">
-                </div>
-                <h2 class="reviews__title">lauria_gog</h2>
-            </div>
-    
-            <div class="reviews__wrapper">
-                <div class="reviews__img">
-                    <img src="./images/reviews7.png" alt="">
-                </div>
-                <h2 class="reviews__title">lauria_gog</h2>
-            </div>
-    
-            <div class="reviews__wrapper">
-                <div class="reviews__img">
-                    <img src="./images/reviews8.png" alt="">
-                </div>
-                <h2 class="reviews__title">lauria_gog</h2>
-            </div>
-         </div>
         </div>
     </section>
     <!--========== SECTION NEW SIDE ==========-->
@@ -282,35 +247,35 @@
             <div class="swiper new-swiper">
                 <div class="swiper-wrapper">
                     <div class="new__content swiper-slide">
-                        <div class="new__box">
+                        <div data-new data-id="01" class="new__box">
                             <img src="./images/new1.png" alt="New" class="new__img">
                             <div class="new__boxer">
                                 <h3 class="new__title">Карбонара</h3>
-                                <p class="new__txt">от 120 ₽</p>
+                                <p class="new__txt"> 120 ₽</p>
                             </div>
                         </div>
     
-                        <div class="new__box remove2">
+                        <div data-new data-id="02" class="new__box remove2">
                             <img src="./images/new1.png" alt="New" class="new__img">
                             <div class="new__boxer">
                                 <h3 class="new__title">Карбонара</h3>
-                                <p class="new__txt">от 120 ₽</p>
+                                <p class="new__txt"> 120 ₽</p>
                             </div>
                         </div>
     
-                        <div class="new__box  remove1  remove">
+                        <div data-new data-id="03" class="new__box  remove1  remove">
                             <img src="./images/new1.png" alt="New" class="new__img">
                             <div class="new__boxer">
                                 <h3 class="new__title">Карбонара</h3>
-                                <p class="new__txt">от 120 ₽</p>
+                                <p class="new__txt"> 120 ₽</p>
                             </div>
                         </div>
     
-                        <div class="new__box remove">
+                        <div data-new data-id="04" class="new__box remove">
                             <img src="./images/new1.png" alt="New" class="new__img">
                             <div class="new__boxer">
                                 <h3 class="new__title">Карбонара</h3>
-                                <p class="new__txt">от 120 ₽</p>
+                                <p class="new__txt"> 120 ₽</p>
                             </div>
                         </div>
                     </div>
@@ -325,8 +290,8 @@
                 Паста
             </h3>
             <div class="pasta__wrap row col-xxl-12 justify-content-sm-center">
-                <div class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
-                    <img src="./images/pasta1.png" alt="Pizza">
+                <div data-id="01" class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
+                    <img class="pasta__img" src="./images/pasta1.png" alt="Pizza">
                     <h1 class="pasta__subtitle">
                         С креветками и трюфелями
                     </h1>
@@ -334,13 +299,13 @@
                         Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                     </p>
                     <div class="pasta__boxxer">
-                        <p class="pasta__price">от 600 ₽</p>
-                        <a href="#" class="button pasta__button">В корзину</a>
+                        <p class="pasta__price">570 ₽</p>
+                        <a href="#!" class="button pasta__button" data-cart>В корзину</a>
                     </div>
                 </div>
                 
-                <div class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
-                    <img src="./images/pasta2.png" alt="Pizza">
+                <div data-id="02" class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
+                    <img class="pasta__img" src="./images/pasta2.png" alt="Pizza">
                     <h1 class="pasta__subtitle">
                         С креветками и трюфелями
                     </h1>
@@ -348,13 +313,13 @@
                         Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                     </p>
                     <div class="pasta__boxxer">
-                        <p class="pasta__price">от 600 ₽</p>
-                        <a href="#" class="button pasta__button">В корзину</a>
+                        <p class="pasta__price">410 ₽</p>
+                        <a href="#!" class="button pasta__button" data-cart>В корзину</a>
                     </div>
                 </div>
     
-                <div class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
-                    <img src="./images/pasta1.png" alt="Pizza">
+                <div data-id="03" class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
+                    <img class="pasta__img" src="./images/pasta1.png" alt="Pizza">
                     <h1 class="pasta__subtitle">
                         С креветками и трюфелями
                     </h1>
@@ -362,13 +327,13 @@
                         Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                     </p>
                     <div class="pasta__boxxer">
-                        <p class="pasta__price">от 600 ₽</p>
-                        <a href="#" class="button pasta__button">В корзину</a>
+                        <p class="pasta__price">422 ₽</p>
+                        <a href="#!" class="button pasta__button" data-cart>В корзину</a>
                     </div>
                 </div>
     
-                <div class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
-                    <img src="./images/pasta2.png" alt="Pizza">
+                <div data-id="04" class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
+                    <img class="pasta__img" src="./images/pasta2.png" alt="Pizza">
                     <h1 class="pasta__subtitle">
                         С креветками и трюфелями
                     </h1>
@@ -376,13 +341,13 @@
                         Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                     </p>
                     <div class="pasta__boxxer">
-                        <p class="pasta__price">от 600 ₽</p>
-                        <a href="#" class="button pasta__button">В корзину</a>
+                        <p class="pasta__price">770 ₽</p>
+                        <a href="#!" class="button pasta__button" data-cart>В корзину</a>
                     </div>
                 </div>
     
-                <div class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
-                    <img src="./images/pasta1.png" alt="Pizza">
+                <div data-id="05" class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
+                    <img class="pasta__img" src="./images/pasta1.png" alt="Pizza">
                     <h1 class="pasta__subtitle">
                         С креветками и трюфелями
                     </h1>
@@ -390,13 +355,13 @@
                         Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                     </p>
                     <div class="pasta__boxxer">
-                        <p class="pasta__price">от 600 ₽</p>
-                        <a href="#" class="button pasta__button">В корзину</a>
+                        <p class="pasta__price">710 ₽</p>
+                        <a href="#!" class="button pasta__button" data-cart>В корзину</a>
                     </div>
                 </div>
     
-                <div class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
-                    <img src="./images/pasta2.png" alt="Pizza">
+                <div data-id="06" class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
+                    <img class="pasta__img" src="./images/pasta2.png" alt="Pizza">
                     <h1 class="pasta__subtitle">
                         С креветками и трюфелями
                     </h1>
@@ -404,13 +369,13 @@
                         Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                     </p>
                     <div class="pasta__boxxer">
-                        <p class="pasta__price">от 600 ₽</p>
-                        <a href="#" class="button pasta__button">В корзину</a>
+                        <p class="pasta__price">440 ₽</p>
+                        <a href="#!" class="button pasta__button" data-cart>В корзину</a>
                     </div>
                 </div>
     
-                <div class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
-                    <img src="./images/pasta1.png" alt="Pizza">
+                <div data-id="07" class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
+                    <img class="pasta__img" src="./images/pasta1.png" alt="Pizza">
                     <h1 class="pasta__subtitle">
                         С креветками и трюфелями
                     </h1>
@@ -418,13 +383,13 @@
                         Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                     </p>
                     <div class="pasta__boxxer">
-                        <p class="pasta__price">от 600 ₽</p>
-                        <a href="#" class="button pasta__button">В корзину</a>
+                        <p class="pasta__price">550 ₽</p>
+                        <a href="#!" class="button pasta__button" data-cart>В корзину</a>
                     </div>
                 </div>
     
-                <div class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
-                    <img src="./images/pasta2.png" alt="Pizza">
+                <div data-id="08" class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
+                    <img class="pasta__img" src="./images/pasta2.png" alt="Pizza">
                     <h1 class="pasta__subtitle">
                         С креветками и трюфелями
                     </h1>
@@ -432,8 +397,8 @@
                         Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                     </p>
                     <div class="pasta__boxxer">
-                        <p class="pasta__price">от 600 ₽</p>
-                        <a href="#" class="button pasta__button">В корзину</a>
+                        <p class="pasta__price">570 ₽</p>
+                        <a href="#!" class="button pasta__button" data-cart>В корзину</a>
                     </div>
                 </div>
             </div>
@@ -445,8 +410,8 @@
                 Паста
             </h3>
             <div class="pasta__wrap row col-xxl-12 col-xl-12 col-lg-12 col-sm-12">
-                <div class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
-                    <img src="./images/pasta1.png" alt="Pizza">
+                <div data-id="09" class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
+                    <img class="pasta__img" src="./images/pasta1.png" alt="Pizza">
                     <h1 class="pasta__subtitle">
                         С креветками и трюфелями
                     </h1>
@@ -454,13 +419,13 @@
                         Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                     </p>
                     <div class="pasta__boxxer">
-                        <p class="pasta__price">от 600 ₽</p>
-                        <a href="#" class="button pasta__button">В корзину</a>
+                        <p class="pasta__price">790 ₽</p>
+                        <a href="#!" class="button pasta__button" data-cart>В корзину</a>
                     </div>
                 </div>
                 
-                <div class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
-                    <img src="./images/pasta2.png" alt="Pizza">
+                <div data-id="10" class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
+                    <img class="pasta__img" src="./images/pasta2.png" alt="Pizza">
                     <h1 class="pasta__subtitle">
                         С креветками и трюфелями
                     </h1>
@@ -468,13 +433,13 @@
                         Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                     </p>
                     <div class="pasta__boxxer">
-                        <p class="pasta__price">от 600 ₽</p>
-                        <a href="#" class="button pasta__button">В корзину</a>
+                        <p class="pasta__price">600 ₽</p>
+                        <a href="#!" class="button pasta__button" data-cart>В корзину</a>
                     </div>
                 </div>
     
-                <div class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
-                    <img src="./images/pasta1.png" alt="Pizza">
+                <div data-id="11" class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
+                    <img class="pasta__img" src="./images/pasta1.png" alt="Pizza">
                     <h1 class="pasta__subtitle">
                         С креветками и трюфелями
                     </h1>
@@ -482,13 +447,13 @@
                         Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                     </p>
                     <div class="pasta__boxxer">
-                        <p class="pasta__price">от 600 ₽</p>
-                        <a href="#" class="button pasta__button">В корзину</a>
+                        <p class="pasta__price">500 ₽</p>
+                        <a href="#!" class="button pasta__button" data-cart>В корзину</a>
                     </div>
                 </div>
     
-                <div class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
-                    <img src="./images/pasta2.png" alt="Pizza">
+                <div data-id="12" class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
+                    <img class="pasta__img" src="./images/pasta2.png" alt="Pizza">
                     <h1 class="pasta__subtitle">
                         С креветками и трюфелями
                     </h1>
@@ -496,13 +461,13 @@
                         Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                     </p>
                     <div class="pasta__boxxer">
-                        <p class="pasta__price">от 600 ₽</p>
-                        <a href="#" class="button pasta__button">В корзину</a>
+                        <p class="pasta__price">620 ₽</p>
+                        <a href="#!" class="button pasta__button" data-cart>В корзину</a>
                     </div>
                 </div>
     
-                <div class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
-                    <img src="./images/pasta1.png" alt="Pizza">
+                <div data-id="13" class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
+                    <img class="pasta__img" src="./images/pasta1.png" alt="Pizza">
                     <h1 class="pasta__subtitle">
                         С креветками и трюфелями
                     </h1>
@@ -510,13 +475,13 @@
                         Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                     </p>
                     <div class="pasta__boxxer">
-                        <p class="pasta__price">от 600 ₽</p>
-                        <a href="#" class="button pasta__button">В корзину</a>
+                        <p class="pasta__price">480 ₽</p>
+                        <a href="#!" class="button pasta__button" data-cart>В корзину</a>
                     </div>
                 </div>
     
-                <div class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
-                    <img src="./images/pasta2.png" alt="Pizza">
+                <div data-id="14" class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
+                    <img class="pasta__img" src="./images/pasta2.png" alt="Pizza">
                     <h1 class="pasta__subtitle">
                         С креветками и трюфелями
                     </h1>
@@ -524,13 +489,13 @@
                         Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                     </p>
                     <div class="pasta__boxxer">
-                        <p class="pasta__price">от 600 ₽</p>
-                        <a href="#" class="button pasta__button">В корзину</a>
+                        <p class="pasta__price">540 ₽</p>
+                        <a href="#!" class="button pasta__button" data-cart>В корзину</a>
                     </div>
                 </div>
     
-                <div class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
-                    <img src="./images/pasta1.png" alt="Pizza">
+                <div data-id="15" class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
+                    <img class="pasta__img" src="./images/pasta1.png" alt="Pizza">
                     <h1 class="pasta__subtitle">
                         С креветками и трюфелями
                     </h1>
@@ -538,13 +503,13 @@
                         Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                     </p>
                     <div class="pasta__boxxer">
-                        <p class="pasta__price">от 600 ₽</p>
-                        <a href="#" class="button pasta__button">В корзину</a>
+                        <p class="pasta__price">510 ₽</p>
+                        <a href="#!" class="button pasta__button" data-cart>В корзину</a>
                     </div>
                 </div>
     
-                <div class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
-                    <img src="./images/pasta2.png" alt="Pizza">
+                <div data-id="16" class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
+                    <img class="pasta__img" src="./images/pasta2.png" alt="Pizza">
                     <h1 class="pasta__subtitle">
                         С креветками и трюфелями
                     </h1>
@@ -552,8 +517,8 @@
                         Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                     </p>
                     <div class="pasta__boxxer">
-                        <p class="pasta__price">от 600 ₽</p>
-                        <a href="#" class="button pasta__button">В корзину</a>
+                        <p class="pasta__price">650 ₽</p>
+                        <a href="#!" class="button pasta__button" data-cart>В корзину</a>
                     </div>
                 </div>
             </div>
@@ -565,8 +530,8 @@
                 Паста
             </h3>
             <div class="pasta__wrap row col-xxl-12 justify-content-sm-center">
-                <div class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
-                    <img src="./images/pasta1.png" alt="Pizza">
+                <div data-id="17" class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
+                    <img class="pasta__img" src="./images/pasta1.png" alt="Pizza">
                     <h1 class="pasta__subtitle">
                         С креветками и трюфелями
                     </h1>
@@ -574,13 +539,13 @@
                         Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                     </p>
                     <div class="pasta__boxxer">
-                        <p class="pasta__price">от 600 ₽</p>
-                        <a href="#" class="button pasta__button">В корзину</a>
+                        <p class="pasta__price">810 ₽</p>
+                        <a href="#!" class="button pasta__button" data-cart>В корзину</a>
                     </div>
                 </div>
                 
-                <div class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
-                    <img src="./images/pasta2.png" alt="Pizza">
+                <div data-id="18" class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
+                    <img class="pasta__img" src="./images/pasta2.png" alt="Pizza">
                     <h1 class="pasta__subtitle">
                         С креветками и трюфелями
                     </h1>
@@ -588,13 +553,13 @@
                         Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                     </p>
                     <div class="pasta__boxxer">
-                        <p class="pasta__price">от 600 ₽</p>
-                        <a href="#" class="button pasta__button">В корзину</a>
+                        <p class="pasta__price">700 ₽</p>
+                        <a href="#!" class="button pasta__button" data-cart>В корзину</a>
                     </div>
                 </div>
     
-                <div class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
-                    <img src="./images/pasta1.png" alt="Pizza">
+                <div data-id="19" class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
+                    <img class="pasta__img" src="./images/pasta1.png" alt="Pizza">
                     <h1 class="pasta__subtitle">
                         С креветками и трюфелями
                     </h1>
@@ -602,13 +567,13 @@
                         Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                     </p>
                     <div class="pasta__boxxer">
-                        <p class="pasta__price">от 600 ₽</p>
-                        <a href="#" class="button pasta__button">В корзину</a>
+                        <p class="pasta__price">910 ₽</p>
+                        <a href="#!" class="button pasta__button" data-cart>В корзину</a>
                     </div>
                 </div>
     
-                <div class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
-                    <img src="./images/pasta2.png" alt="Pizza">
+                <div data-id="20" class="pasta__box col-xxl-3 col-xl-3 col-lg-3 col-sm-6">
+                    <img class="pasta__img" src="./images/pasta2.png" alt="Pizza">
                     <h1 class="pasta__subtitle">
                         С креветками и трюфелями
                     </h1>
@@ -616,8 +581,9 @@
                         Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                     </p>
                     <div class="pasta__boxxer">
-                        <p class="pasta__price">от 600 ₽</p>
-                        <a href="#" class="button pasta__button">В корзину</a>
+                        <p class="pasta__price">1000
+                             ₽</p>
+                        <a href="#!" class="button pasta__button" data-cart>В корзину</a>
                     </div>
                 </div>  
             </div>
@@ -627,30 +593,30 @@
     <!--========== SECTION AKSIYA ==========-->
     <section class="section__aksiya" id="section-aksiya">
         <div class="container">
-          <h3 class="aksiya__subtitle">Наши <span>акции</span></h3>
-          <div class="aksiya__box row col-xxl-12 xol-xl-12 col-lg-12">
-              <div class="aksiya__img col-xxl-6 xol-xl-6 col-lg-6">
-                  <img src="./images/aksiya1.png" alt="aksiya">
-              </div>
-              <div class="aksiya__boxxer col-xxl-6 xol-xl-6 col-lg-6">
-                  <div class="aksiya__wrap col-xxl-6 xol-xl-6 col-lg-6">
-                      <img src="./images/aksiya1.png" alt="aksiya">
-                  </div>
+            <h3 class="aksiya__subtitle">Наши <span>акции</span></h3>
+            <div class="aksiya__box row col-xxl-12 xol-xl-12 col-lg-12">
+                <div class="aksiya__img col-xxl-6 xol-xl-6 col-lg-6">
+                    <img src="./images/aksiya1.png" alt="aksiya">
+                </div>
+                <div class="aksiya__boxxer col-xxl-6 xol-xl-6 col-lg-6">
+                    <div class="aksiya__wrap col-xxl-6 xol-xl-6 col-lg-6">
+                        <img src="./images/aksiya1.png" alt="aksiya">
+                    </div>
     
-                  <div class="aksiya__wrap col-xxl-6 xol-xl-6 col-lg-6">
-                    <img src="./images/aksiya1.png" alt="aksiya">
-                </div>
-        
-                <div class="aksiya__wrap col-xxl-6 xol-xl-6 col-lg-6">
-                    <img src="./images/aksiya1.png" alt="aksiya">
-                </div>
+                    <div class="aksiya__wrap col-xxl-6 xol-xl-6 col-lg-6">
+                        <img src="./images/aksiya1.png" alt="aksiya">
+                    </div>
     
-                <div class="aksiya__wrap col-xxl-6 xol-xl-6 col-lg-6">
-                    <img src="./images/aksiya1.png" alt="aksiya">
+                    <div class="aksiya__wrap col-xxl-6 xol-xl-6 col-lg-6">
+                        <img src="./images/aksiya1.png" alt="aksiya">
+                    </div>
+    
+                    <div class="aksiya__wrap col-xxl-6 xol-xl-6 col-lg-6">
+                        <img src="./images/aksiya1.png" alt="aksiya">
+                    </div>
                 </div>
-              </div>
-          </div>
-          <a href="#" class="button aksiya__button">Все вкции</a>
+            </div>
+            <a href="#" class="button aksiya__button">Все вкции</a>
         </div>
     </section>
     <!--========== SECTION DOSTAFKA ==========-->
@@ -784,7 +750,7 @@
 </footer>
 <!--========== SCROLL UP ==========-->
 <a href="#" class="scrollup" id="scroll-up">
-    <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    <i class="bx bx-up-arrow-alt scrollup__icon"></i>
 </a>
 <!--========== JQUERY ==========-->
 <script src="./scripts/jquery.min.js"></script>
@@ -804,6 +770,10 @@
 </script>
 <!--========== CUSTOM SCRIPT ==========-->
 <script src="./scripts/components/main.js"></script>
+<script src="./scripts/components/calculator.js"></script>
+<script src="./scripts/components/toggleCart.js"></script>
+<script src="./scripts/components/counter.js"></script>
+<script src="./scripts/components/cart.js"></script>
 </body>
 
 </html>
