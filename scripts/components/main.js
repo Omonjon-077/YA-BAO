@@ -5,13 +5,35 @@ let swiper = new Swiper(".headerSwiper", {
   slidesPerGroup: 1,
   grabCursor: true,
   loop: true
-}); // Reviews Swiper //
+}); // Section Reviews
 
 let swiperRev = new Swiper(".reviews__wrap", {
   slidesPerView: 8,
   spaceBetween: 16,
   grabCursor: true,
-  loop: 'true'
+  loop: 'true',
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 16
+    },
+    540: {
+      slidesPerView: 3,
+      spaceBetween: 16
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 16
+    },
+    991: {
+      slidesPerView: 6,
+      spaceBetween: 16
+    },
+    1200: {
+      slidesPerView: 8,
+      spaceBetween: 16
+    }
+  }
 }); // Korzina Swiper //
 
 let swiperKor = new Swiper(".korzinaSwiper", {
@@ -80,7 +102,7 @@ $(function () {
     };
 
     var header = document.getElementById("nav__fixed");
-    var searchBy = document.getElementById("search");
+    var searchBy = document.getElementById("search-Box");
     var sticky = header.offsetTop;
 
     function myFunction() {
@@ -115,11 +137,32 @@ $(function () {
 }); // New Swiper //
 
 let newSwiper = new Swiper(".new-swiper", {
-  centeredSlides: true,
-  slidesPerView: 'auto',
+  slidesPerView: 4,
   spaceBetween: 16,
   grabCursor: true,
-  loop: 'true'
+  loop: 'true',
+  breakpointsNew: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 16
+    },
+    540: {
+      slidesPerView: 2,
+      spaceBetween: 16
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 16
+    },
+    991: {
+      slidesPerView: 4,
+      spaceBetween: 30
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 30
+    }
+  }
 }); // Order Swiper //
 
 var orderSwiper = new Swiper(".orderSwip", {

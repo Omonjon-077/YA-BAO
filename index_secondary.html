@@ -93,9 +93,9 @@
                         <a class="nav__link" href="contact.html">Контакты</a>
                     </li>
                 </ul>
-                <form class="nav__form none" id="search" action="">
-                    <input required placeholder="Поиск" type="search">
-                    <button><i class="bx bx-search-alt-2"></i></button>
+                <form class="searchBox none" id="search-Box">
+                    <input type="search" placeholder="Поиск..." required>
+                    <button type="submit"><i class="bx bx-search"></i></button>
                 </form>
             </div>
             <div class="nav__buttons">
@@ -185,49 +185,49 @@
     
             <div class="swiper reviews__wrap">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide reviews__wrapper">
+                    <div class="swiper-slide reviews__wrapper d-flex flex-column align-items-center text-center">
                         <div class="reviews__img">
                             <img src="./images/reviews1.png" alt="">
                         </div>
                         <h2 class="reviews__title">lauria_gog</h2>
                     </div>
-                    <div class="swiper-slide reviews__wrapper">
+                    <div class="swiper-slide reviews__wrapper d-flex flex-column align-items-center text-center">
                         <div class="reviews__img">
                             <img src="./images/reviews2.png" alt="">
                         </div>
                         <h2 class="reviews__title">lauria_gog</h2>
                     </div>
-                    <div class="swiper-slide reviews__wrapper">
+                    <div class="swiper-slide reviews__wrapper d-flex flex-column align-items-center text-center">
                         <div class="reviews__img">
                             <img src="./images/reviews3.png" alt="">
                         </div>
                         <h2 class="reviews__title">lauria_gog</h2>
                     </div>
-                    <div class="swiper-slide reviews__wrapper">
+                    <div class="swiper-slide reviews__wrapper d-flex flex-column align-items-center text-center">
                         <div class="reviews__img">
                             <img src="./images/reviews4.png" alt="">
                         </div>
                         <h2 class="reviews__title">lauria_gog</h2>
                     </div>
-                    <div class="swiper-slide reviews__wrapper">
+                    <div class="swiper-slide reviews__wrapper d-flex flex-column align-items-center text-center">
                         <div class="reviews__img">
                             <img src="./images/reviews5.png" alt="">
                         </div>
                         <h2 class="reviews__title">lauria_gog</h2>
                     </div>
-                    <div class="swiper-slide reviews__wrapper">
+                    <div class="swiper-slide reviews__wrapper d-flex flex-column align-items-center text-center">
                         <div class="reviews__img">
                             <img src="./images/reviews6.png" alt="">
                         </div>
                         <h2 class="reviews__title">lauria_gog</h2>
                     </div>
-                    <div class="swiper-slide reviews__wrapper">
+                    <div class="swiper-slide reviews__wrapper d-flex flex-column align-items-center text-center">
                         <div class="reviews__img">
                             <img src="./images/reviews7.png" alt="">
                         </div>
                         <h2 class="reviews__title">lauria_gog</h2>
                     </div>
-                    <div class="swiper-slide reviews__wrapper">
+                    <div class="swiper-slide reviews__wrapper d-flex flex-column align-items-center text-center">
                         <div class="reviews__img">
                             <img src="./images/reviews8.png" alt="">
                         </div>
@@ -246,37 +246,35 @@
             </h4>
             <div class="swiper new-swiper">
                 <div class="swiper-wrapper">
-                    <div class="new__content swiper-slide">
-                        <div data-new data-id="01" class="new__box">
-                            <img src="./images/new1.png" alt="New" class="new__img">
-                            <div class="new__boxer">
-                                <h3 class="new__title">Карбонара</h3>
-                                <p class="new__txt"> 120 ₽</p>
-                            </div>
+                    <div data-new data-id="01" class="swiper-slide new__box">
+                        <img src="./images/new1.png" alt="New" class="new__img">
+                        <div class="new__boxer">
+                            <h3 class="new__title">Карбонара</h3>
+                            <p class="new__txt"> 120 ₽</p>
                         </div>
+                    </div>
     
-                        <div data-new data-id="02" class="new__box remove2">
-                            <img src="./images/new1.png" alt="New" class="new__img">
-                            <div class="new__boxer">
-                                <h3 class="new__title">Карбонара</h3>
-                                <p class="new__txt"> 120 ₽</p>
-                            </div>
+                    <div data-new data-id="02" class="swiper-slide new__box">
+                        <img src="./images/new1.png" alt="New" class="new__img">
+                        <div class="new__boxer">
+                            <h3 class="new__title">Карбонара</h3>
+                            <p class="new__txt"> 120 ₽</p>
                         </div>
+                    </div>
     
-                        <div data-new data-id="03" class="new__box  remove1  remove">
-                            <img src="./images/new1.png" alt="New" class="new__img">
-                            <div class="new__boxer">
-                                <h3 class="new__title">Карбонара</h3>
-                                <p class="new__txt"> 120 ₽</p>
-                            </div>
+                    <div data-new data-id="03" class="swiper-slide new__box">
+                        <img src="./images/new1.png" alt="New" class="new__img">
+                        <div class="new__boxer">
+                            <h3 class="new__title">Карбонара</h3>
+                            <p class="new__txt"> 120 ₽</p>
                         </div>
+                    </div>
     
-                        <div data-new data-id="04" class="new__box remove">
-                            <img src="./images/new1.png" alt="New" class="new__img">
-                            <div class="new__boxer">
-                                <h3 class="new__title">Карбонара</h3>
-                                <p class="new__txt"> 120 ₽</p>
-                            </div>
+                    <div data-new data-id="04" class="swiper-slide new__box">
+                        <img src="./images/new1.png" alt="New" class="new__img">
+                        <div class="new__boxer">
+                            <h3 class="new__title">Карбонара</h3>
+                            <p class="new__txt"> 120 ₽</p>
                         </div>
                     </div>
                 </div>
@@ -665,11 +663,11 @@
 <!--========== FOOTER ==========-->
 <footer class="footer" id="footer">
     <div class="container">
-        <div class="footer__container d-flex col-xxl-12 col-xl-12 col-lg-12">'
+        <div class="footer__container d-flex col-xxl-12 col-xl-12 col-lg-12">
             <div class="footer__left col-xxl-6 col-xl-6 col-lg-6">
                 <div class="footer__logos">
-                    <a href="#header" class="footer__logo"><img src="./images/svg/footer-logo.svg" alt=""></a>
-                    <a href="#header" class="footer__logo"><img src="./images/svg/footer-logo2.svg" alt=""></a>
+                    <a href="./index.html" class="footer__logo"><img src="./images/svg/footer-logo.svg" alt=""></a>
+                    <a href="./index.html" class="footer__logo"><img src="./images/svg/footer-logo2.svg" alt=""></a>
                 </div>
                 <div class="footer__left-box">
                     <h2 class="footer__left-title">Калорийность и состав</h2>
@@ -678,21 +676,21 @@
                 <h1 class="footer__left-subtitle">Мы в соцсетях</h1>
                 <div class="footer__left-social">
                     <div class="footer__social-left">
-                        <a href="#" class="footer__social-link">YouTube</a>
-                        <a href="#" class="footer__social-link">Facebook</a>
+                        <a href="#!" class="footer__social-link">YouTube</a>
+                        <a href="#!" class="footer__social-link">Facebook</a>
                     </div>
                     <div class="footer__social-right">
-                        <a href="#" class="footer__social-link">Instagram</a>
-                        <a href="#" class="footer__social-link">ВКонтакте</a>
+                        <a href="#!" class="footer__social-link">Instagram</a>
+                        <a href="#!" class="footer__social-link">ВКонтакте</a>
                     </div>
 
                 </div>
                 <div class="footer__privacy">
                     <p class="footer__left-text">Ya Bao Все праав защищены © 2022</p>
                     <div class="footer__left-cards">
-                        <a href="#" class="footer__card"><img src="./images/svg/footer-card1.svg" alt="Visa"></a>
-                        <a href="#" class="footer__card"><img src="./images/svg/footer-card2.svg" alt="Paypay"></a>
-                        <a href="#" class="footer__card"><img src="./images/svg/footer-card3.svg" alt="Visa"></a>
+                        <a href="#!" class="footer__card"><img src="./images/svg/footer-card1.svg" alt="Visa"></a>
+                        <a href="#!" class="footer__card"><img src="./images/svg/footer-card2.svg" alt="Paypay"></a>
+                        <a href="#!" class="footer__card"><img src="./images/svg/footer-card3.svg" alt="Visa"></a>
                     </div>
                 </div>
             </div>
@@ -703,37 +701,15 @@
                 <div class="footer__right-box">
                     <div class="footer__right-social">
                         <div class="footer__right-wrap">
-                            <div class="footer__right-links">
-                                <a href="#" class="footer__right-link"><img src="./images/svg/whats.svg"
-                                        alt="whats"></a>
-                            </div>
-
-                            <div class="footer__right-links">
-                                <a href="#" class="footer__right-link"><img src="./images/svg/skype.svg"
-                                        alt="whats"></a>
-                            </div>
-
-                            <div class="footer__right-links">
-                                <a href="#" class="footer__right-link"><img src="./images/svg/messen.svg"
-                                        alt="whats"></a>
-                            </div>
-
-                            <div class="footer__right-links">
-                                <a href="#" class="footer__right-link"><img src="./images/svg/teleg.svg"
-                                        alt="whats"></a>
-                            </div>
+                            <a href="#!" class="footer__right-link"><img src="./images/svg/whats.svg" alt="whats"></a>
+                            <a href="#!" class="footer__right-link"><img src="./images/svg/skype.svg" alt="whats"></a>
+                            <a href="#!" class="footer__right-link"><img src="./images/svg/messen.svg" alt="whats"></a>
+                            <a href="#!" class="footer__right-link"><img src="./images/svg/teleg.svg" alt="whats"></a>
                         </div>
                         <div class="footer__right-wrapper ">
-                            <div class="footer__right-links">
-                                <a href="#" class="footer__right-link"><img src="./images/svg/face.svg" alt="whats"></a>
-                            </div>
-
-                            <div class="footer__right-links">
-                                <a href="#" class="footer__right-link"><img src="./images/svg/vk.svg" alt="whats"></a>
-                            </div>
-                            <div class="footer__right-linkss">
-                                <a href="#" class="footer__right-massage">Написать нам</a>
-                            </div>
+                            <a href="#!" class="footer__right-link"><img src="./images/svg/face.svg" alt="whats"></a>
+                            <a href="#!" class="footer__right-link"><img src="./images/svg/vk.svg" alt="whats"></a>
+                            <a href="#!" class="footer__right-massage">Написать нам</a>
                         </div>
                     </div>
                 </div>
@@ -773,7 +749,9 @@
 <script src="./scripts/components/calculator.js"></script>
 <script src="./scripts/components/toggleCart.js"></script>
 <script src="./scripts/components/counter.js"></script>
+<script src="./scripts/components/counterKorzi.js"></script>
 <script src="./scripts/components/cart.js"></script>
+<script src="./scripts/components/cartKorzi.js"></script>
 </body>
 
 </html>

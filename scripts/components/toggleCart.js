@@ -36,3 +36,18 @@ function cardDelFunc() {
 }
 
 ;
+
+function cardDelFuncKorzi() {
+  const cardDelIcon = document.querySelector('.basket__container-delet');
+  const cardItem = document.querySelector('.basket__container-wrapper');
+  const cartWrapper = document.querySelector('.basket__container-wrap');
+
+  if (cartWrapper.children.length >= 1) {
+    cardDelIcon.addEventListener('click', () => {
+      cardItem.remove();
+      calCartPrice();
+    });
+  }
+}
+
+;

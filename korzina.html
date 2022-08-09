@@ -67,23 +67,24 @@
     <section class="basket">
         <div class="container">
             <div class="basket__container">
-                  <h1 class="basket__container-subtitle">Корзина</h1>
+                <h1 class="basket__container-subtitle">Корзина</h1>
                 <div class="basket__container-wrap">
-                
-                    <div class="basket__container-wrapper d-flex align-items-center justify-content-between">
-                        <div class="basket__container-img"><img src="./images/basket1.png" alt=""></div>
+    
+    
+                    <div data-id="01"
+                        class="basket__container-wrapper d-flex align-items-center justify-content-between">
+                        <div class="basket__container-img"><img src="./images/basket1.png" alt="" /></div>
                         <div class="basket__container-box">
                             <h2 class="basket__container-title">С креветками и трюфелями</h2>
-                            <p class="basket__container-txt">Домашнаяя паста феттуччине, сливочный соус, креветки,
-                                трюфельное масло, черный перец, пармезан.350 г
+                            <p class="basket__container-txt">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                             </p>
                         </div>
                         <div class="basket__container-boxxer d-flex align-items-center">
-                            <p class="basket__container-num">120 ₽</p>
+                            <p class="basket__container-num">540 ₽</p>
                             <div class="basket__container-pm">
-                                <a href="#!" class="basket__container-minus"><img src="./images/svg/minus.svg" alt=""></a>
-                                <p class="basket__container-number">1</p>
-                                <a href="#!" class="basket__container-plus"><img src="./images/svg/plus.svg" alt=""></a>
+                                <a data-order="minus" href="#!" class="basket__container-minus">-</a>
+                                <p data-number class="basket__container-number">1</p>
+                                <a data-order="plus" href="#!" class="basket__container-plus">+</a>
                             </div>
                             <a href="#!" class="basket__container-delet">
                                 <svg width="17" height="19" viewbox="0 0 17 19" fill="none"
@@ -96,20 +97,21 @@
                         </div>
                     </div>
     
-                    <div class="basket__container-wrapper d-flex align-items-center justify-content-between">
-                        <div class="basket__container-img"><img src="./images/basket2.png" alt=""></div>
+    
+                    <div data-id="02"
+                        class="basket__container-wrapper d-flex align-items-center justify-content-between">
+                        <div class="basket__container-img"><img src="./images/basket2.png" alt="" /></div>
                         <div class="basket__container-box">
                             <h2 class="basket__container-title">С креветками и трюфелями</h2>
-                            <p class="basket__container-txt">Домашнаяя паста феттуччине, сливочный соус, креветки,
-                                трюфельное масло, черный перец, пармезан.350 г
+                            <p class="basket__container-txt">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
                             </p>
                         </div>
                         <div class="basket__container-boxxer d-flex align-items-center">
-                            <p class="basket__container-num">120 ₽</p>
+                            <p class="basket__container-num">720 ₽</p>
                             <div class="basket__container-pm">
-                                <a href="#!" class="basket__container-minus"><img src="./images/svg/minus.svg" alt=""></a>
-                                <p class="basket__container-number">1</p>
-                                <a href="#!" class="basket__container-plus"><img src="./images/svg/plus.svg" alt=""></a>
+                                <a data-order="minus" href="#!" class="basket__container-minus">-</a>
+                                <p data-number class="basket__container-number">1</p>
+                                <a data-order="plus" href="#!" class="basket__container-plus">+</a>
                             </div>
                             <a href="#!" class="basket__container-delet">
                                 <svg width="17" height="19" viewbox="0 0 17 19" fill="none"
@@ -121,6 +123,8 @@
                             </a>
                         </div>
                     </div>
+    
+                    
                 </div>
             </div>
         </div>
@@ -236,7 +240,7 @@
                                     alt="">Вернуться в магазин</a>
                         </div>
                         <div class="promo__container-right d-flex flex-column">
-                            <p class="promo__container-price">Сумма заказа: <span>1 048 ₽</span></p>
+                            <p class="promo__container-price">Сумма заказа: <span>1080 ₽</span></p>
                             <a href="#!" class="promo__container-btn button">Оформить заказ <img src="./images/svg/promo-right.svg"
                                     alt=""></a>
                         </div>
@@ -250,11 +254,11 @@
 <!--========== FOOTER ==========-->
 <footer class="footer" id="footer">
     <div class="container">
-        <div class="footer__container d-flex col-xxl-12 col-xl-12 col-lg-12">'
+        <div class="footer__container d-flex col-xxl-12 col-xl-12 col-lg-12">
             <div class="footer__left col-xxl-6 col-xl-6 col-lg-6">
                 <div class="footer__logos">
-                    <a href="#header" class="footer__logo"><img src="./images/svg/footer-logo.svg" alt=""></a>
-                    <a href="#header" class="footer__logo"><img src="./images/svg/footer-logo2.svg" alt=""></a>
+                    <a href="./index.html" class="footer__logo"><img src="./images/svg/footer-logo.svg" alt=""></a>
+                    <a href="./index.html" class="footer__logo"><img src="./images/svg/footer-logo2.svg" alt=""></a>
                 </div>
                 <div class="footer__left-box">
                     <h2 class="footer__left-title">Калорийность и состав</h2>
@@ -263,21 +267,21 @@
                 <h1 class="footer__left-subtitle">Мы в соцсетях</h1>
                 <div class="footer__left-social">
                     <div class="footer__social-left">
-                        <a href="#" class="footer__social-link">YouTube</a>
-                        <a href="#" class="footer__social-link">Facebook</a>
+                        <a href="#!" class="footer__social-link">YouTube</a>
+                        <a href="#!" class="footer__social-link">Facebook</a>
                     </div>
                     <div class="footer__social-right">
-                        <a href="#" class="footer__social-link">Instagram</a>
-                        <a href="#" class="footer__social-link">ВКонтакте</a>
+                        <a href="#!" class="footer__social-link">Instagram</a>
+                        <a href="#!" class="footer__social-link">ВКонтакте</a>
                     </div>
 
                 </div>
                 <div class="footer__privacy">
                     <p class="footer__left-text">Ya Bao Все праав защищены © 2022</p>
                     <div class="footer__left-cards">
-                        <a href="#" class="footer__card"><img src="./images/svg/footer-card1.svg" alt="Visa"></a>
-                        <a href="#" class="footer__card"><img src="./images/svg/footer-card2.svg" alt="Paypay"></a>
-                        <a href="#" class="footer__card"><img src="./images/svg/footer-card3.svg" alt="Visa"></a>
+                        <a href="#!" class="footer__card"><img src="./images/svg/footer-card1.svg" alt="Visa"></a>
+                        <a href="#!" class="footer__card"><img src="./images/svg/footer-card2.svg" alt="Paypay"></a>
+                        <a href="#!" class="footer__card"><img src="./images/svg/footer-card3.svg" alt="Visa"></a>
                     </div>
                 </div>
             </div>
@@ -288,37 +292,15 @@
                 <div class="footer__right-box">
                     <div class="footer__right-social">
                         <div class="footer__right-wrap">
-                            <div class="footer__right-links">
-                                <a href="#" class="footer__right-link"><img src="./images/svg/whats.svg"
-                                        alt="whats"></a>
-                            </div>
-
-                            <div class="footer__right-links">
-                                <a href="#" class="footer__right-link"><img src="./images/svg/skype.svg"
-                                        alt="whats"></a>
-                            </div>
-
-                            <div class="footer__right-links">
-                                <a href="#" class="footer__right-link"><img src="./images/svg/messen.svg"
-                                        alt="whats"></a>
-                            </div>
-
-                            <div class="footer__right-links">
-                                <a href="#" class="footer__right-link"><img src="./images/svg/teleg.svg"
-                                        alt="whats"></a>
-                            </div>
+                            <a href="#!" class="footer__right-link"><img src="./images/svg/whats.svg" alt="whats"></a>
+                            <a href="#!" class="footer__right-link"><img src="./images/svg/skype.svg" alt="whats"></a>
+                            <a href="#!" class="footer__right-link"><img src="./images/svg/messen.svg" alt="whats"></a>
+                            <a href="#!" class="footer__right-link"><img src="./images/svg/teleg.svg" alt="whats"></a>
                         </div>
                         <div class="footer__right-wrapper ">
-                            <div class="footer__right-links">
-                                <a href="#" class="footer__right-link"><img src="./images/svg/face.svg" alt="whats"></a>
-                            </div>
-
-                            <div class="footer__right-links">
-                                <a href="#" class="footer__right-link"><img src="./images/svg/vk.svg" alt="whats"></a>
-                            </div>
-                            <div class="footer__right-linkss">
-                                <a href="#" class="footer__right-massage">Написать нам</a>
-                            </div>
+                            <a href="#!" class="footer__right-link"><img src="./images/svg/face.svg" alt="whats"></a>
+                            <a href="#!" class="footer__right-link"><img src="./images/svg/vk.svg" alt="whats"></a>
+                            <a href="#!" class="footer__right-massage">Написать нам</a>
                         </div>
                     </div>
                 </div>
@@ -358,7 +340,9 @@
 <script src="./scripts/components/calculator.js"></script>
 <script src="./scripts/components/toggleCart.js"></script>
 <script src="./scripts/components/counter.js"></script>
+<script src="./scripts/components/counterKorzi.js"></script>
 <script src="./scripts/components/cart.js"></script>
+<script src="./scripts/components/cartKorzi.js"></script>
 </body>
 
 </html>
